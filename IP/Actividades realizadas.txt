@@ -1,0 +1,10 @@
+se utilizaron las tablas: BASE_INFO_CENTRAL, BASE_INFO_CENTRAL_1, CLIENTE_TABLA, FACTURACION_DIARIA_CONTROL, FACTURACION_DIARIA_DETALLE, FORMAS_DE_PAGO, NUMERACION_PARTIDAS, PERIODO_CONTABLE, PUNTO_DE_VENTA y VENDEDOR_TABLA.
+
+Se colocaron 3 grupos:
+grupo 1: FACTURACION_DIARIA_CONTROL.PUNTO_DE_VENTA_CODIGO_BIC que muestra la DESCRIPCION_PUNTO_VENTA.
+grupo 2: FACTURA_DIARIA_CONTROL.PREFIJO_PARTIDA_CONTABLE que muestra el NOMBRE_PARTIDA_CONTABL.
+grupo 3: FACTURA_DIARIA_CONTROL.NUMFACTURA que muestra FACTURA_DIARIA_CONTROL.NUMFACTURA, FACTURA_DIARIA_CONTROL.FECHA_DE_FACTURA, FACTURA_DIARIA_CONTROL.CODIGO_BIC, @Nombre del cliente, FORMAS_DE_PAGO.ABREVIATURAS_FORMAS_DE_PAGO, SUMA @CantidadFactura, SUMA @TotalFactura, SUMA @descuento, SUMA @Total con descuento, SUMA @Impuesto, SUMA @Total - descuento + Impuesto, FACTURA_DIARIA_DETALLE.DESCRIPCION_DETALLE_FA, @Nombre vendedor.
+
+El el pie de pagina 2 van los campos: un recuento de FACTURA_DIARIA_CONTROL.NUMFACTURA, SUMA @CantidadFactura, SUMA @TotalFactura, SUMA @descuento, SUMA @Total con descuento, SUMA @Impuesto, SUMA @Total - descuento + Impuesto.
+En el pie de pagina 1 van los campos: un recuento de FACTURA_DIARIA_CONTROL.NUMFACTURA, SUMA @CantidadFactura, SUMA @TotalFactura, SUMA @descuento, SUMA @Total con descuento, SUMA @Impuesto, SUMA @Total - descuento + Impuesto
+En el pie del informe los campos: un recuento de FACTURA_DIARIA_CONTROL.NUMFACTURA, SUMA @CantidadFactura, SUMA @TotalFactura, SUMA @descuento, SUMA @Total con descuento, SUMA @Impuesto, SUMA @Total - descuento + Impuesto y #RTotal0: un recuento de FACTURA_DIARIA_CONTROL.STATUS_DE_LA_FACTURA.

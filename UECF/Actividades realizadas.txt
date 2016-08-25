@@ -1,0 +1,2 @@
+se agregaron los 2 logos que solicitaron, y se creo el parámetro solicitud para que ellos digiten cual es la solicitud por ejemplo:
+cheque o transferencia

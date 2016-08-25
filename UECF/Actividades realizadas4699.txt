@@ -1,0 +1,3 @@
+se le agregaron 2 nuevos logos y a cada uno de los logos se les coloco una formula de suprimir si la compañia no le
+corresponde se bloquee, para que los nuevos logos funcionaran se crearon 2 nuevas formulas, @Logo2 y @Logo 5,
+tambien se agrero un objeto de texto que contiene dentro de el los campos DESCRIPCION_SOLICITUD_PAG Y @Valor con asteriscos

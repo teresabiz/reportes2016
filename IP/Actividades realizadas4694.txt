@@ -1,0 +1,9 @@
+se le agregaron las formulas: @Debito reex, @Debito finan, @Creditos reex y @Creditos Finan también se le cambio la formula de @Debitos y @Creditos del Detalle a:
+para @Debitos se dejo la siguiente formula:
+if {?Codigo4} = "2" then
+{@Debito reex} else 
+{@Debito finan}
+para @Creditos la siguiente formula:
+if {?Codigo4} = "2" then
+{@Creditos reex} else 
+{@Creditos Finan}

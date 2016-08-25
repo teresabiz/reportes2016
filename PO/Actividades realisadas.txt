@@ -1,0 +1,3 @@
+se agrego la formula @Total venta con lo siguiente:
+{FACTURA_DIARIA_DETALLE.CANTIDAD_A_FACTURAR}*tonumber({FACTURA_DIARIA_DETALLE.PRECIO_DE_VENTA})-{FACTURA_DIARIA_DETALLE.VALOR_DEL_DESCUENTO}
+se le cambio el campo resumido Suma de FACTURA_DIARIA_DETALLE.PRECIO_DE_VENTA de la tabla cruzada por el de Suma de @Total venta

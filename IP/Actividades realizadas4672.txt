@@ -1,0 +1,13 @@
+se creo un nuevo reporte con las tablas BASE_INFO_CENTRAL, BASE_INFO_CENTRAL_1, CLIENTE_TABLA, TIPO_CLIENTE, VENDEDOR_TABLA y la vista CXC_ANALISIS_VENCE:
+se crearon 4 grupos:
+grupo 1:
+@Nombre vendedor, que lleva la formula @Nombre Vendedor
+grupo 2:
+CLIENTE_TABLA.CODIGO_TIPO_DE_CLIENTE que lleva el campo TIPO_CLIENTE.DESCRIPCION_TIPO_DE_CLIEN
+grupo 3:
+@Nombre del Cliente
+que lleva el campo de la formula @Nombre del cliente, una suma de los campos, CXC_ANALISIS_VENCE.TOTAL_FINl, @Corriente, @ 1-8, @9-15, @ 16-20, @ 21-30, @31-45, @Mas 45
+
+se realizo en una suma en el pie del grupo 1 de los campos CXC_ANALISIS_VENCE.TOTAL_FINl, @Corriente, @ 1-8, @9-15, @ 16-20, @ 21-30, @ 31-45 @Mas 45, una suma en el pie del informe con los mismos datos y las formulas @% saldo, @% Corriente, @% 1-8, @% 9-15, @% 16-20, @%21-30, @%31-45 y @% Mas 45.
+
+se colocaron una serie de condiciones en cada uno los grupos para que no se mostrara el el código de la oficina en el reporte.

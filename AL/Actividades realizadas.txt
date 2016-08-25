@@ -1,0 +1,11 @@
+se agregaron las tablas BASE_INFO_CENTRAL, CAUSA_DE_AUMENTO, DEPARTAMENTO_TABLA, EMPLEADO_TABLA, HISTORIAL_SALARIAL y 
+PUESTO_PHYSICAL_TABLE
+al informe se le agregaron 2 grupos
+grupo 1: HISTORIAL_SALARIAL.CODIGO_BIC que esta oculto
+grupo 2: HISTORIAL_SALARIAL.FECHA_VIGENCIA_AUMENTO que esta oculto
+se crearon las formulas @Departamento, @Diferencia, @Empleado, @Puesto, @salaria Anterior
+en el detalle se coloco el EMPLEADO_TABLA.CODIGO_BIC, HISTORIAL_SALARIAL.FECHA_VIGENCIA_AUMENTO,
+@Salaria Anterior y @Diferencia el detalle esta oculto
+en el pie del del grupo 2 se colocaron EMPLEADO_TABLA.CODIGO_BIC, @Empleado, @Puesto, @Departamento,
+HISTORIAL_SALARIAL.FECHA_VIGENCIA_AUMENTO, CAUSA_DE_AUMENTO.DESCRIPCION_CAUSA_AUMENTO, @Salario anterior, @Diferencia,
+EMPLEADO_TABLA.SUELDO_MENSUAL, HISTORIAL_SALARIAL.COMENTARIO_DE_AUMENTO
