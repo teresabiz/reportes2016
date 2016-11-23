@@ -1,2 +1,26 @@
-se agregaron los 2 logos que solicitaron, y se creo el parámetro solicitud para que ellos digiten cual es la solicitud por ejemplo:
-cheque o transferencia
+•Se coloco el “Titulo del Informe” al reporte debido a que no lo tenía.
+•Se colocaron los parámetros ?Año ?Periodo para que mostraran el año y el periodo de búsqueda.
+•El grupo #1 OI_COMPONENTE.COMPONENTE que muestra los campos: OI_COMPONENTE.COMPONENTE, la formula @NOMBRE,
+@Suma de @Aprobado Financiero, Suma de @Ejecutado Financiero y Suma de @Diferencia.
+Se colocó una franja de color tono verde fuerte para que se diferenciara el componente de los demás grupos.
+La fórmula @NOMBRE: {OI_SALDOS_ORGANISMOS.COMPONENTE}+" "+{OI_COMPONENTE.NOMBRE_DEL_COMPONENTE}+" "+{OI_COMPONENTE.DESCRIPCION_DEL_COMPONENT}
+•El grupo #2 OI_ACTIVIDAD.ID_ACTIVIDADES_1 que muestra los campos: OI_ACTIVIDAD.ACTIVIDAD_ORGANISMO,
+OI_ACTIVIDAD.NOMBRE_DE_ACTIVIDAD, Suma de @Aprobado Financiero, Suma de @ Ejecutado Financiero y Suma de @Diferencia.
+Se colocó una franja de color tono plata para que se diferenciara del componente y del objeto del gasto.
+Con la fórmula de suprimir el grupo: {OI_ACTIVIDAD.NIVEL_DE_ACTIVIDAD} <> '1'.
+•	El grupo #3 OI_ACTIVIDAD.ID_ACTIVIDADES_2 que muestra los campos: OI_ACTIVIDAD.ACTIVIDAD_ORGANISMO,
+OI_ACTIVIDAD.NOMBRE_DE_ACTIVIDAD, Suma de @Aprobado Financiero, Suma de @ Ejecutado Financiero y Suma de @Diferencia.
+Se colocó una franja de color tono plata para que se diferenciara del componente y del objeto del gasto.
+Con la fórmula de suprimir el grupo: {OI_ACTIVIDAD.NIVEL_DE_ACTIVIDAD} <> '2'.
+•El grupo #4 OI_ACTIVIDAD.ID_ACTIVIDADES_3 que muestra los campos: OI_ACTIVIDAD.ACTIVIDAD_ORGANISMO,
+OI_ACTIVIDAD.NOMBRE_DE_ACTIVIDAD, Suma de @Aprobado Financiero, Suma de @ Ejecutado Financiero y Suma de @Diferencia.
+Se colocó una franja de color tono plata para que se diferenciara del componente y del objeto del gasto.
+Con la fórmula de suprimir el grupo: {OI_ACTIVIDAD.NIVEL_DE_ACTIVIDAD} <> '3'.
+•El grupo #5 OI_SALDOS_ORGANISMOS.OBJETO_DEL_GASTO que muestra los campos: OI_SALDOS_ORGANISMOS.OBJETO_DEL_GASTO,
+OBJETO_DEL_GASTO_TABLA.NOMBRE_DEL_OBJETO_DEL_GAS, OBJETO_DEL_GASTO_TABLA.ABREVIATURA_GASTO y Suma de @Ejecutado Financiero.
+Se colocó una franja de color tono verde pálido para que se diferenciara el del objeto del gasto de los demás grupos.
+Con la fórmula de suprimir el grupo: Sum ({@Ejecutado Financiero}, {OI_SALDOS_ORGANISMOS.OBJETO_DEL_GASTO})= 0.
+•En el Detalle se colocó OI_ACTIVIDAD.RESPONSABLE_INSTITUCIONAL, un objeto de texto “Cuenta”,
+OI_SALDOS_ORGANISMOS.CODIGO_DE_CUENTA y @Ejecutado Financiero.
+Con la fórmula de suprimir el detalle: {?Resumen}= 'N' or {@Ejecutado Financiero} = 0.
+•En el Pie del informe: un objeto de texto “GRAN TOTAL”, Suma de @Aprobado Financiero, Suma de @Ejecutado y Suma de @Diferencia.
